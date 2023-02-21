@@ -11,15 +11,17 @@
         android:theme="@style/Theme.TravelBlog">
         <activity
             android:name=".login"
-            android:exported="true" />
+            android:exported="true">
+            <!--The Main and Launcher intents is what starts our application on the login screen-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
